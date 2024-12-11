@@ -4,9 +4,9 @@ public class Food {
     private String name;
     private ServingInfo servingInfo;
     private Date expiry;
-    private Nutrients[] nutrients;
+    private Nutrient[] nutrients;
 
-    public Food(String name, ServingInfo servingInfo, Date expiry, Nutrients nutrients){
+    public Food(String name, ServingInfo servingInfo, Date expiry, Nutrient[] nutrients){
         this.name = name;
         this.servingInfo = servingInfo;
         this.expiry = expiry;
@@ -37,11 +37,11 @@ public class Food {
         this.expiry = expiry;
     }
 
-    public Nutrients getNutrients(){
-        return nutrients;
+    public Nutrient[] getNutrients(){
+        return this.nutrients;
     }
 
-    public void setNutrients(Nutrients nutrients){
+    public void setNutrients(Nutrient[] nutrients){
         this.nutrients = nutrients;
     }
 
