@@ -44,5 +44,4 @@ public class Food {
     public void setNutrients(Nutrient[] nutrients){
         this.nutrients = nutrients;
     }
-
 }
